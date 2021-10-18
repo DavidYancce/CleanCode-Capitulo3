@@ -8,15 +8,18 @@ function separarPalabras(){
     frase= frase.split(" ");
 }
 //Mejor
-function separarPalabras2(frase){
-    return frase.split(" ");
+function separarPalabras2(frase,separador){
+    return frase.split(separador);
 }
 
 //Segundo ejemplo
+function autenticar(nombreUsuario, contraasenia){
+    if(validarContrasenia((nombreUsuario, contraasenia)) {
+        session.initialize();
+    }
+}
 function validarContrasenia(nombreUsuario, contrasenia){
-    //...
-    if(respuestaBD=contrasenia.hash()){
-        session.initialize()//Error
+    if(respuestaBD == contrasenia.hash()){
         return true;
     }
 }

@@ -3,7 +3,7 @@ function funcionConError(){
 }
 
 //Mal
-if(funcionConError == true){
+if(funcionConError.error == false){
     //...
 }
 else{
@@ -23,7 +23,7 @@ try{
 }
 catch (error) {
     mostrarMensaje(error);
-    reportarError(error);
+    reportarError(error);//Log : metadata
     //demas funciones que hagan algo con el error
 }
 //Nota: lo mismo con las promesas (.then y .catch)
